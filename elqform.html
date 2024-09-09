@@ -1,4 +1,10 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <style type="text/css">
+   .pf-test-button {
+     background-color: cyan;
+     color: blue;
+   }
   .elq-form .elq-required{
     color:red!important;
     display:inline;
@@ -674,8 +680,8 @@
     border-radius:2px;
     max-width:256px}
 </style>
-<form method="post" name="copyOfCaptureTagForm-1725041356388" action="https://s40766406.t.eloqua.com/e/f2" onsubmit="return handleFormSubmit(this)" id="form2910" class="elq-form">
-  <input value="copyOfCaptureTagForm-1725041356388" type="hidden" name="elqFormName">
+<form method="post" name="UntitledForm-1725814776954" action="https://s40766406.t.eloqua.com/e/f2" onsubmit="return handleFormSubmit(this)" id="form2913" class="elq-form">
+  <input value="UntitledForm-1725814776954" type="hidden" name="elqFormName">
   <input value="40766406" type="hidden" name="elqSiteId">
   <input name="elqCampaignId" type="hidden">
   <div class="layout container-fluid">
@@ -684,7 +690,7 @@
         <div class="layout-col col-sm-12 col-xs-12">
           <div id="formElement0" class="elq-field-style form-element-layout row">
             <div style="text-align:left;" class="col-sm-12 col-xs-12">
-              <label class="elq-label " for="fe36380">Email Address
+              <label class="elq-label " for="fe36417">First Name
                 <span class="elq-required">*
                 </span>
               </label>
@@ -693,7 +699,7 @@
               <div class="row">
                 <div class="col-xs-12">
                   <div class="field-control-wrapper">
-                    <input type="text" class="elq-item-input" name="emailAddress" id="fe36380" value="" style="width:100%;">
+                    <input type="text" class="elq-item-input" name="FirstName" id="fe36417" value="" style="width:100%;">
                   </div>
                 </div>
               </div>
@@ -707,16 +713,14 @@
         <div class="layout-col col-sm-12 col-xs-12">
           <div id="formElement1" class="elq-field-style form-element-layout row">
             <div style="text-align:left;" class="col-sm-12 col-xs-12">
-              <label class="elq-label " for="fe36381">First Name
-                <span class="elq-required">*
-                </span>
+              <label class="elq-label " for="fe36418">Last Name
               </label>
             </div>
             <div class="col-sm-12 col-xs-12">
               <div class="row">
                 <div class="col-xs-12">
                   <div class="field-control-wrapper">
-                    <input type="text" class="elq-item-input" name="firstName" id="fe36381" value="" style="width:100%;">
+                    <input type="text" class="elq-item-input" name="LastName" id="fe36418" value="" style="width:100%;">
                   </div>
                 </div>
               </div>
@@ -730,7 +734,7 @@
         <div class="layout-col col-sm-12 col-xs-12">
           <div id="formElement2" class="elq-field-style form-element-layout row">
             <div style="text-align:left;" class="col-sm-12 col-xs-12">
-              <label class="elq-label " for="fe36382">Last Name
+              <label class="elq-label " for="fe36415">Email Address
                 <span class="elq-required">*
                 </span>
               </label>
@@ -739,7 +743,7 @@
               <div class="row">
                 <div class="col-xs-12">
                   <div class="field-control-wrapper">
-                    <input type="text" class="elq-item-input" name="lastName" id="fe36382" value="" style="width:100%;">
+                    <input type="text" class="elq-item-input" name="emailAddress" id="fe36415" value="" style="width:100%;">
                   </div>
                 </div>
               </div>
@@ -753,7 +757,7 @@
         <div class="layout-col col-sm-12 col-xs-12">
           <div id="formElement3" class="elq-field-style form-element-layout row">
             <div style="text-align:left;" class="col-sm-12 col-xs-12">
-              <label class="elq-label " for="fe36383">UTM Campaign
+              <label class="elq-label " for="fe36419">Country
                 <span class="elq-required">*
                 </span>
               </label>
@@ -762,30 +766,7 @@
               <div class="row">
                 <div class="col-xs-12">
                   <div class="field-control-wrapper">
-                    <input type="text" class="elq-item-input" name="utm_campaign" id="fe36383" value="" style="width:100%;">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="grid-layout-col">
-        <div class="layout-col col-sm-12 col-xs-12">
-          <div id="formElement4" class="elq-field-style form-element-layout row">
-            <div style="text-align:left;" class="col-sm-12 col-xs-12">
-              <label class="elq-label " for="fe36385">Country
-                <span class="elq-required">*
-                </span>
-              </label>
-            </div>
-            <div class="col-sm-12 col-xs-12">
-              <div class="row">
-                <div class="col-xs-12">
-                  <div class="field-control-wrapper">
-                    <select class="elq-item-select" id="fe36385" name="country" style="width:100%;" data-value="~~eloqua..type--emailfield..syntax--Country~~">
+                    <select class="elq-item-select" id="fe36419" name="country" style="width:100%;" data-value="">
                       <option value="">Please select
                       </option>
                       <option value="US">United States
@@ -1301,15 +1282,17 @@
         </div>
       </div>
     </div>
+    <button class="pf-test-button">Button Text - I should be cyan with blue font</button>
+
     <div class="row">
       <div class="grid-layout-col">
         <div class="layout-col col-sm-12 col-xs-12">
-          <div id="formElement5" class="elq-field-style form-element-layout row">
+          <div id="formElement4" class="elq-field-style form-element-layout row">
             <div class="col-sm-12 col-xs-12">
               <div class="row">
                 <div class="col-xs-12">
                   <div>
-                    <input type="Submit" class="submit-button-style " value="Submit" id="fe36384">
+                    <input type="Submit" class="submit-button-style " value="Submit" id="fe36416">
                   </div>
                 </div>
               </div>
@@ -1329,6 +1312,44 @@
     submitButton.setAttribute('disabled', true);
     submitButton.style.cursor = 'wait';
     submitButton.parentNode.appendChild(spinner);
+    
+  const complicated_regex = /\{\{([\w\d\.\-]*)(?:\s*\|\s*\bdefault\b\s*:\s*|\s*\|\s*\bdelimiter\b\s*:\s*)?([\w\s\d\.\-\W_]*?)\}\}/; // make this an actually complicated regex
+  const x = 1;
+  const a = `${x}`;
+  const b = "\"I've got escaped quotations\"";
+  const c = $(".pf-test-button"); // For this one you need to add jquery script
+  const d = complicated_regex.test("{{custom.test | default: Default Value}}");
+  const e = JSON.stringify({ a: 123, b: "abc", c: { ca: ["y", 'y'] } });
+  const f = "/\~!@#$%^&*()_+}{|\":<>? test all spl chars `spl cars` ";
+  const g = document.querySelector(".pf-test-button");
+  const h = complicated_regex.test("{Does not match}");
+  const i = 'string wrapped by \'single quotes\' with escaped single quotes. "Double Quotes". Escaped back-slash \\ should show as single backslash.';
+  console.log(`a should be 1, actual value: ${1}`);
+  console.log(`b should be a sentence with quotations: ${b}`);
+  console.log(`c should be text content from button grabbed by jquery: ${c.text()}`);
+  console.log(`d should be true when matching regex: ${d}`);
+  console.log(`e should be stringified json: ${e}`);
+  console.log(`f should be string of random special characters: ${f}`);
+  console.log(`g sholud be text content from button grabbed by querySelector: ${g.textContent}`);
+  console.log(`h should return false because does not match regex: ${h}`);
+  console.log(`i should correctly output escaped characters: ${i}`);
+  
+  
+    var formInstance = LiveValidationForm.getInstance(event.target);
+      var isValid = LiveValidation.massValidate(formInstance.fields);
+ 
+
+      if (isValid) {
+        var email = document.querySelector("input[name='emailAddress']").value;
+
+        window.parent.postMessage({
+          conversionUrl: document.location.href,
+          referrer: document.referrer,
+          email: email,
+          lookbookExternalForm: true
+        }, "*");
+      }
+      
     return true;
   }
   function resetSubmitButton(e){
@@ -1342,11 +1363,11 @@
       elements[i].addEventListener('change', resetSubmitButton);
     }
   }
-  var form = document.getElementById('form2910');
+  var form = document.getElementById('form2913');
   addChangeHandler(form.getElementsByTagName('input'));
   addChangeHandler(form.getElementsByTagName('select'));
   addChangeHandler(form.getElementsByTagName('textarea'));
-  var nodes = document.querySelectorAll('#form2910 input[data-subscription]');
+  var nodes = document.querySelectorAll('#form2913 input[data-subscription]');
   if (nodes) {
     for (var i = 0, len = nodes.length; i < len; i++) {
       var status = nodes[i].dataset ? nodes[i].dataset.subscription : nodes[i].getAttribute('data-subscription');
@@ -1355,7 +1376,7 @@
       }
     }
   };
-  var nodes = document.querySelectorAll('#form2910 select[data-value]');
+  var nodes = document.querySelectorAll('#form2913 select[data-value]');
   if (nodes) {
     for (var i = 0; i < nodes.length; i++) {
       var node = nodes[i];
@@ -1372,126 +1393,80 @@
   }
   this.getParentElement = function(list) {
     return list[list.length-1].parentElement};
-  var dom0 = document.querySelector('#form2910 #fe36380');
-  var fe36380 = new LiveValidation(dom0, {
+  var dom0 = document.querySelector('#form2913 #fe36417');
+  var fe36417 = new LiveValidation(dom0, {
     validMessage: "", onlyOnBlur: false, wait: 300, isPhoneField: false}
                                   );
-  fe36380.add(Validate.Format, {
+  fe36417.add(Validate.Custom, {
+    against: function(value) {
+      return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+    }
+    , failureMessage: "Value must not contain any URL's"}
+             );
+  fe36417.add(Validate.Custom, {
+    against: function(value) {
+      return !value.match(/(<([^>]+)>)/ig);
+    }
+    , failureMessage: "Value must not contain any HTML"}
+             );
+  fe36417.add(Validate.Length, {
+    tooShortMessage:"Invalid length for field value", tooLongMessage: "Invalid length for field value",  minimum: 0, maximum: 35}
+             );
+  fe36417.add(Validate.Presence, {
+    failureMessage:"This field is required"}
+             );
+  var dom1 = document.querySelector('#form2913 #fe36418');
+  var fe36418 = new LiveValidation(dom1, {
+    validMessage: "", onlyOnBlur: false, wait: 300, isPhoneField: false}
+                                  );
+  fe36418.add(Validate.Custom, {
+    against: function(value) {
+      return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+    }
+    , failureMessage: "Value must not contain any URL's"}
+             );
+  fe36418.add(Validate.Custom, {
+    against: function(value) {
+      return !value.match(/(<([^>]+)>)/ig);
+    }
+    , failureMessage: "Value must not contain any HTML"}
+             );
+  fe36418.add(Validate.Length, {
+    tooShortMessage:"Invalid length for field value", tooLongMessage: "Invalid length for field value",  minimum: 0, maximum: 35}
+             );
+  var dom2 = document.querySelector('#form2913 #fe36415');
+  var fe36415 = new LiveValidation(dom2, {
+    validMessage: "", onlyOnBlur: false, wait: 300, isPhoneField: false}
+                                  );
+  fe36415.add(Validate.Format, {
     pattern: /(^[A-Z0-9!#\$%&'\*\+\-\/=\?\^_`\{\|\}~][A-Z0-9!#\$%&'\*\+\-\/=\?\^_`\{\|\}~\.]{0,62}@(([A-Z0-9](?:[A-Z0-9\-]{0,61}[A-Z0-9])?)(\.[A-Z0-9](?:[A-Z0-9\-]{0,61}[A-Z0-9])?)+)$)/i, failureMessage: "A valid email address is required"}
              );
-  fe36380.add(Validate.Format, {
+  fe36415.add(Validate.Format, {
     pattern: /\.\.|\.@/i, failureMessage: "A valid email address is required", negate: "true"}
              );
-  fe36380.add(Validate.Presence, {
+  fe36415.add(Validate.Presence, {
     failureMessage:"This field is required"}
              );
-  fe36380.add(Validate.Length, {
+  fe36415.add(Validate.Length, {
     tooShortMessage:"Invalid length for field value", tooLongMessage: "Invalid length for field value",  minimum: 0, maximum: 35}
              );
-  fe36380.add(Validate.Custom, {
+  fe36415.add(Validate.Custom, {
     against: function(value) {
       return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
     }
     , failureMessage: "Value must not contain any URL's"}
              );
-  fe36380.add(Validate.Custom, {
+  fe36415.add(Validate.Custom, {
     against: function(value) {
       return !value.match(/(<([^>]+)>)/ig);
     }
     , failureMessage: "Value must not contain any HTML"}
              );
-  var dom1 = document.querySelector('#form2910 #fe36381');
-  var fe36381 = new LiveValidation(dom1, {
+  var dom3 = document.querySelector('#form2913 #fe36419');
+  var fe36419 = new LiveValidation(dom3, {
     validMessage: "", onlyOnBlur: false, wait: 300, isPhoneField: false}
                                   );
-  fe36381.add(Validate.Presence, {
+  fe36419.add(Validate.Presence, {
     failureMessage:"This field is required"}
              );
-  fe36381.add(Validate.Length, {
-    tooShortMessage:"Invalid length for field value", tooLongMessage: "Invalid length for field value",  minimum: 0, maximum: 35}
-             );
-  fe36381.add(Validate.Custom, {
-    against: function(value) {
-      return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
-    }
-    , failureMessage: "Value must not contain any URL's"}
-             );
-  fe36381.add(Validate.Custom, {
-    against: function(value) {
-      return !value.match(/(<([^>]+)>)/ig);
-    }
-    , failureMessage: "Value must not contain any HTML"}
-             );
-  var dom2 = document.querySelector('#form2910 #fe36382');
-  var fe36382 = new LiveValidation(dom2, {
-    validMessage: "", onlyOnBlur: false, wait: 300, isPhoneField: false}
-                                  );
-  fe36382.add(Validate.Presence, {
-    failureMessage:"This field is required"}
-             );
-  fe36382.add(Validate.Length, {
-    tooShortMessage:"Invalid length for field value", tooLongMessage: "Invalid length for field value",  minimum: 0, maximum: 35}
-             );
-  fe36382.add(Validate.Custom, {
-    against: function(value) {
-      return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
-    }
-    , failureMessage: "Value must not contain any URL's"}
-             );
-  fe36382.add(Validate.Custom, {
-    against: function(value) {
-      return !value.match(/(<([^>]+)>)/ig);
-    }
-    , failureMessage: "Value must not contain any HTML"}
-             );
-  var dom3 = document.querySelector('#form2910 #fe36383');
-  var fe36383 = new LiveValidation(dom3, {
-    validMessage: "", onlyOnBlur: false, wait: 300, isPhoneField: false}
-                                  );
-  fe36383.add(Validate.Custom, {
-    against: function(value) {
-      return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
-    }
-    , failureMessage: "Value must not contain any URL's"}
-             );
-  fe36383.add(Validate.Custom, {
-    against: function(value) {
-      return !value.match(/(<([^>]+)>)/ig);
-    }
-    , failureMessage: "Value must not contain any HTML"}
-             );
-  fe36383.add(Validate.Length, {
-    tooShortMessage:"Invalid length for field value", tooLongMessage: "Invalid length for field value",  minimum: 0, maximum: 35}
-             );
-  fe36383.add(Validate.Presence, {
-    failureMessage:"This field is required"}
-             );
-  var dom4 = document.querySelector('#form2910 #fe36385');
-  var fe36385 = new LiveValidation(dom4, {
-    validMessage: "", onlyOnBlur: false, wait: 300, isPhoneField: false}
-                                  );
-  fe36385.add(Validate.Presence, {
-    failureMessage:"This field is required"}
-             );
-</script>
-
-
-<script>
-   var form = document.getElementById("form2910");
-form.addEventListener("submit", function(event) {
-      var formInstance = LiveValidationForm.getInstance(event.target);
-      var isValid = LiveValidation.massValidate(formInstance.fields);
-
-      if (isValid) {
-        var email = document.querySelector("input[name='emailAddress']").value;
-        console.log("/\~!@#$%^&*()_+}{|":<>? test all spl chars `spl cars` ");
-        
-        window.parent.postMessage({
-          conversionUrl: document.location.href,
-          referrer: document.referrer,
-          email: email,
-          lookbookExternalForm: true
-        }, "*");
-      }
-    });
 </script>
